@@ -50,3 +50,5 @@
 /home/squirrel/uni/repos/asp.net/coreMVC/release/obj/Debug/net6.0/ref/dotnetCoreMVC.dll
 /home/squirrel/uni/repos/asp.net/coreMVC/release/obj/Debug/net6.0/dotnetCoreMVC.pdb
 /home/squirrel/uni/repos/asp.net/coreMVC/release/obj/Debug/net6.0/dotnetCoreMVC.genruntimeconfig.cache
+/home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/System.Security.Permissions.dll
+/home/squirrel/uni/repos/asp.net/coreMVC/release/obj/Debug/net6.0/dotnetCoreMVC.csproj.CopyComplete

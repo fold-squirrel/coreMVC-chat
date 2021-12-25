@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lhcsx9h6WSW980x+XthslDkeunTlH9zlQzOzqeLz3eg=",
+  "Hash": "wFczD/MSy9UsfT6nQEQRPsMWZiZ62xgPbciBG0V0F38=",
   "Source": "dotnetCoreMVC",
   "BasePath": "_content/dotnetCoreMVC",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
+    },
+    {
+      "Identity": "/home/squirrel/uni/repos/asp.net/coreMVC/release/wwwroot/txtFile.txt",
+      "SourceId": "dotnetCoreMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/squirrel/uni/repos/asp.net/coreMVC/release/wwwroot/",
+      "BasePath": "_content/dotnetCoreMVC",
+      "RelativePath": "txtFile.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/txtFile.txt"
     }
   ]
 }
