@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "K6Cq4xT/Lrq7VREcSkvZXooxROEDscohjNT/Efx9U4I0bju1bzwXtjFGQguqYo6FzR58V4hC5jyI5s9Ozv2dyg==",
+  "success": true,
+  "projectFilePath": "/home/squirrel/uni/repos/asp.net/coreMVC/release/dotnetCoreMVC.csproj",
+  "expectedPackageFiles": [
+    "/home/squirrel/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.0/microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
