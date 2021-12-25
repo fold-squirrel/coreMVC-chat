@@ -24,11 +24,19 @@ public class TryController : Controller
 
    public int convert_to_int(int? nullableInt)
    {
-      if(nullableInt == null)
+      if (nullableInt == null)
          throw new ArgumentException("Session Id was null");
       
       int normalInt = Convert.ToInt32(nullableInt);
       return normalInt;
+   }
+
+   public void incrementSession()
+   {
+      if (HttpContext.Session.GetInt32("Id") == null)
+         HttpContext.Session.SetInt32("Id", 0);
+      else
+         HttpContext.Session.SetInt32("Id", convert_to_int(HttpContext.Session.GetInt32("Id")) + 1);
    }
 
    public ActionResult chat()
@@ -36,12 +44,14 @@ public class TryController : Controller
       //loadDataFromLocalFile();
       string[] messages = System.IO.File.ReadAllLines("./wwwroot/txtFile.txt");
 
-      HttpContext.Session.SetInt32("Id", Id.num++);
+      incrementSession();
 
       ChatMessage tryMsg = new ChatMessage
       {
          msg = messages[convert_to_int(HttpContext.Session.GetInt32("Id"))] 
       };
+
+      Console.WriteLine(convert_to_int(HttpContext.Session.GetInt32("Id")));
 
       return Json(tryMsg);
    }
