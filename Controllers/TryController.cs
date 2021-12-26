@@ -14,12 +14,7 @@ public class TryController : Controller
 
    public IActionResult Display()
    {
-      return View();
-   }
-
-   public void loadDataFromLocalFile()
-   {
-      string[] messages = System.IO.File.ReadAllLines("./wwwroot/txtFile.txt");
+      return View("~/Views/Try/Nohere.cshtml");
    }
 
    public int convert_to_int(int? nullableInt)
@@ -50,8 +45,6 @@ public class TryController : Controller
       {
          msg = messages[convert_to_int(HttpContext.Session.GetInt32("Id"))] 
       };
-
-      Console.WriteLine(convert_to_int(HttpContext.Session.GetInt32("Id")));
 
       return Json(tryMsg);
    }
