@@ -1,0 +1,11 @@
+
+user::hello@gmail.com
+date::17:09
+msg::hello guys \:\: ::my name ::is::msg::nice to meet U
+media::
+
+user::hedlo@goail.com
+date::19:17
+msg::hello msg
+media::/path/to/media/file.mp4
+

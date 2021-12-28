@@ -374,3 +374,6 @@
 /home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
 /home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
 /home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/web.config
+/home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll
+/home/squirrel/uni/repos/asp.net/coreMVC/release/bin/Debug/net6.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll

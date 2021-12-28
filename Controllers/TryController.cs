@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using dotnetCoreMVC.Models;
 using System.IO;
@@ -46,6 +43,7 @@ public class TryController : Controller
          msg = messages[convert_to_int(HttpContext.Session.GetInt32("Id"))] 
       };
 
+      Console.WriteLine(Id.num);
       return Json(tryMsg);
    }
 }
