@@ -1,8 +1,12 @@
-﻿<div class="text-center">
-   <h2>
-      <a onclick="ajaxChat()">hello</a>
-      <a onclick="ajaxChat()">well</a>
-   </h2>
-</div>
-
-<div id="chatArea"></div>
+﻿@{
+    ViewBag.Title = "UploadFile";
+}
+<h2>UploadFile</h2>
+@using (Html.BeginForm("UploadFile", "Upload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        @Html.TextBox("file", "", new { type = "file" }) <br />
+        <input type="submit" value="Upload" />
+        @ViewBag.Message
+    </div>
+}

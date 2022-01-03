@@ -1,13 +1,11 @@
-using dotnetCoreMVC.Models;
-using dotnetCoreMVC.ServerStartConfiguration;
-
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
+using System.Xml;
+using System.Xml.Serialization;
+using System.Xml.Linq;
+using System.Collections.Generic;
+using dotnetCoreMVC.Models;
 
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.AspNetCore.Http.Features;
@@ -60,7 +58,44 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-ServerStart.Configuration(true);
+var axml = new XmlSerializer(typeof(List<User>));
+
+using (var reader = new StreamReader("Users.txt"))
+{
+    var users = (List<User>) axml.Deserialize(reader);
+    Lists.userList = users;
+};
+
+var mxml = new XmlSerializer(typeof(List<UserMsg>));
+
+using (var reader = new StreamReader("messages.txt"))
+{
+    var msg = (List<UserMsg>) mxml.Deserialize(reader);
+    Lists.msgList = msg;
+};
 
 app.Run();
 
+string s; 
+
+using (var writer = new StringWriter())
+{
+    axml.Serialize(writer, Lists.userList);
+    s = writer.ToString();
+};
+XmlDocument xmlDoc = new XmlDocument();
+var sw = new StreamWriter("Users.txt");
+xmlDoc.LoadXml(s);
+xmlDoc.Save(sw);
+sw.Close();
+
+using (var writer = new StringWriter())
+{
+    mxml.Serialize(writer, Lists.msgList);
+    s = writer.ToString();
+};
+XmlDocument xmlDo = new XmlDocument();
+var w = new StreamWriter("messages.txt");
+xmlDoc.LoadXml(s);
+xmlDoc.Save(w);
+w.Close();

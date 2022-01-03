@@ -1,11 +1,19 @@
-
-user::hello@gmail.com
-date::17:09
-msg::hello guys \:\: ::my name ::is::msg::nice to meet U
-media::
-
-user::hedlo@goail.com
-date::19:17
-msg::hello msg
-media::/path/to/media/file.mp4
-
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUserMsg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <UserMsg>
+    <sender>hello@gmail.com</sender>
+    <date>17:09</date>
+    <content>hello guys  
+my name 
+is
+msg
+nice to meet U</content>
+    <media />
+  </UserMsg>
+  <UserMsg>
+    <sender>hedlo@goail.com</sender>
+    <date>19:17</date>
+    <content>hello msg</content>
+    <media>/path/to/media/file.mp4</media>
+  </UserMsg>
+</ArrayOfUserMsg>
