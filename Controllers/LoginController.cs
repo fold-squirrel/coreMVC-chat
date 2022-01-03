@@ -11,7 +11,7 @@ public class LoginController : Controller
         return View();
     }
 
-    public ActionResult Name(string Name = String.Empty)
+    public ActionResult Name(string Name = "")
     {
 
         return View();

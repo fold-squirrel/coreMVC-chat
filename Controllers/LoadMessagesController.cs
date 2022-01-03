@@ -17,11 +17,13 @@ public class LoadMessagesController : Controller
     public ActionResult onFirstLoad()
     {
         //reset session counter for loaded images
+        return View("~/Views/Home/Index.cshtml");
     } 
 
     public JsonResult newMessages()
     {
         //return json list with new messages
+        return null;
     }
 
     public void addMessage(string messages)
