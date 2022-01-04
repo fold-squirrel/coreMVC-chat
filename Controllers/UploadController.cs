@@ -25,13 +25,13 @@ namespace dotnetCoreMVC.Controllers
           {
              if (formFile.Length > 0)
              {
-                using (var stream = new FileStream("Upload/" + file[0].FileName, FileMode.Create))
+                using (var stream = new FileStream("Upload/" + formFile.FileName, FileMode.Create))
                 {
                    formFile.CopyTo(stream);
                 }
              }
+          ViewBag.Message += string.Format("{0} file uploaded sucsessfully !!!.", formFile.FileName);
           }
-          ViewBag.Message += string.Format("{0} file uploaded sucsessfully !!!.", file[0].FileName);
           return View("~/Views/Home/Index.cshtml");
        }
 

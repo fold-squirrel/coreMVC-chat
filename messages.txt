@@ -3,17 +3,31 @@
   <UserMsg>
     <sender>hello@gmail.com</sender>
     <date>17:09</date>
-    <content>hello guys  
-my name 
-is
-msg
-nice to meet U</content>
+    <content>hi</content>
     <media />
   </UserMsg>
   <UserMsg>
     <sender>hedlo@goail.com</sender>
     <date>19:17</date>
     <content>hello msg</content>
+    <media>/path/to/media/file.mp4</media>
+  </UserMsg>
+  <UserMsg>
+    <sender>hedlo@goail.com</sender>
+    <date>19:17</date>
+    <content>hi</content>
+    <media>/path/to/media/file.mp4</media>
+  </UserMsg>
+  <UserMsg>
+    <sender>hedlo@goail.com</sender>
+    <date>19:17</date>
+    <content>jhsgjkldsh</content>
+    <media>/path/to/media/file.mp4</media>
+  </UserMsg>
+  <UserMsg>
+    <sender>hedlo@goail.com</sender>
+    <date>19:17</date>
+    <content>oh no</content>
     <media>/path/to/media/file.mp4</media>
   </UserMsg>
 </ArrayOfUserMsg>
