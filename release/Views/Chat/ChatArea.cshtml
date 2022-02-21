@@ -1,0 +1,21 @@
+<div id="num"></div>
+<form id="form" name="form" action="/uploader" enctype="multipart/form-data" method">
+  <div class="buttons">
+    <div class="upload-button">
+      <div class="label">Click me!</div>
+      <input id="files" name="files" type="file" size="1" multiple onchange="uploadFile('file');" />
+    </div>
+  </div>
+</form>
+
+<h1>hello to chat</h1>
+<input type="text" id="messageTextBox">
+<button type="button" id="sendMessage" onclick="addMessage()">Click Me!</button>
+<div id="chatArea"></div>
+<div>
+<iframe src="https://www.w3schools.com" style="height:1px;width:1px;" onload="ajaxChatStart();func();"></iframe>
+</div>
+<script>
+    window.setInterval('ajaxChat();num12()', 2000);
+</script>
+    
